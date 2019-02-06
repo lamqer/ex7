@@ -1,0 +1,28 @@
+
+<h2>First Page</h2>
+<p>This is the first page.</p>
+<h2>Choose</h2>
+<form id="sourceForm" action="index.html" method="post">
+  <label for=""><h3>Language</h3></label>
+  <select id="language" name="language" onchange="showLanguage()">
+    <option value=""></option>
+    <option value="English">English</option>
+    <option value="Finnish">Finnish</option>
+    <option value="Swedish">Swedish</option>
+  </select>
+
+  <label for=""><h3>Phone</h3></label>
+  <input type="radio" name="phone" value="Nokia" onclick="showPhone(this.value)"> Nokia<br>
+  <input type="radio" name="phone" value="Huawei" onclick="showPhone(this.value)"> Huawei<br>
+  <input type="radio" name="phone" value="Samsung" onclick="showPhone(this.value)"> Samsung
+</form>
+
+<br><h2>Selected Values</h2>
+
+<form id="targetForm" action="index.html" method="post">
+  <label for="">Languge: </label> <br>
+    <input type="text" id="selected_language">
+  <br>
+  <label for="">Phone: </label> <br>
+    <input type="text" id="selected_phone">
+</form>
